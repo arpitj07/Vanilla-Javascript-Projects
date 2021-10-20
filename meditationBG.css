@@ -1,40 +1,22 @@
+
 .meditationapp{
-    
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    overflow: hidden;
 }
 
 video{
-    display: none;
+   z-index: -1;
+   position: absolute;
+   max-width: 100%;
+   min-height: 100%;
+   top: 15%;
+   left: 0%;
+   width: auto;
+   height: auto;
 }
 
-.time-select{
-    background: lightblue;
-}
-
-.player-container{
-    background: lightcoral;
-}
-
-.sound-picker{
-    background: lightgreen;
-}
-
-.sound-picker img{
-    width: 150px;
-    height: 150px;
-}
-
-.player-container svg{
-    width: 200px;
-    height: 200px;
-}
-
-.player-container img{
-    width: 50px;
-}
 .time-select, .player-container, .sound-picker{
     width: 100%;
     display: flex;
@@ -42,4 +24,81 @@ video{
     align-items: center;
     flex-direction: column;
     height: 80%;
+}
+
+
+.player-container{
+    position: relative;
+}
+
+.player-container svg{
+    width: 400px;
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%) rotate(-90deg);
+    pointer-events: none;
+}
+.player-container img{
+    width: 100px;
+}
+
+
+
+
+.time-display{
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+    font-size: 3em;
+}
+
+.time-select button{
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 30%;
+    height: 10%;
+    color: blanchedalmond;
+    font-size: 2em;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.time-select button:hover{
+    color: black;
+    background: white;
+}
+ 
+
+
+.sound-picker img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: lightgreen;
+    transition: all 0.2s ease;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    video{
+        object-fit: contain;
+        height: 100vh;
+    }
+    .time-select button{
+        font-size: 15px;
+        flex-wrap: wrap;
+        transition: 0.2s;
+        width: 20%;
+        height: 7%;
+    }
+
+    .sound-picker img{
+        width: 100px;
+        height: 100px;
+    }
+    
 }
