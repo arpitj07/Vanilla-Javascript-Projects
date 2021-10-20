@@ -1,0 +1,45 @@
+.meditationapp{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+video{
+    display: none;
+}
+
+.time-select{
+    background: lightblue;
+}
+
+.player-container{
+    background: lightcoral;
+}
+
+.sound-picker{
+    background: lightgreen;
+}
+
+.sound-picker img{
+    width: 150px;
+    height: 150px;
+}
+
+.player-container svg{
+    width: 200px;
+    height: 200px;
+}
+
+.player-container img{
+    width: 50px;
+}
+.time-select, .player-container, .sound-picker{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+}
