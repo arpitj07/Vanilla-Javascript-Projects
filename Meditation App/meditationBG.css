@@ -1,0 +1,108 @@
+
+.meditationapp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+.time-select, .player-container, .sound-picker{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+}
+
+
+.player-container{
+    position: relative;
+}
+
+.player-container svg{
+    width: 400px;
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%) rotate(-90deg);
+    pointer-events: none;
+}
+.player-container img{
+    width: 100px;
+}
+
+
+
+
+.time-display{
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+    font-size: 3em;
+}
+
+.time-select button{
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 30%;
+    height: 10%;
+    color: blanchedalmond;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.time-select button:hover{
+    color: black;
+    background: white;
+}
+ 
+
+
+.sound-picker img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: lightgreen;
+    transition: all 0.2s ease;
+}
+
+.video-container{
+    
+}
+
+video{
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+ }
+
+
+@media screen and (max-width: 960px) {
+   
+    .time-select button{
+        font-size: 15px;
+        
+        transition: 0.2s;
+        width: 32%;
+        height: 7%;
+    }
+
+    .sound-picker img{
+        width: 100px;
+        height: 100px;
+    }
+    
+}
