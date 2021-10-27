@@ -36,8 +36,6 @@
     width: 100%;
     max-width: 480px;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     flex-direction: column;
     background: #fff;
     border-radius: 5px;
@@ -104,6 +102,8 @@
 
 .input-box i{
     right: 15px;
+    padding: 8px;
+    cursor: pointer;
 }
 
 #Subbutton, #Checkbutton{
@@ -118,11 +118,15 @@
 .alert{
     margin-top: -13px;
 }
-.alerticon{
+.alertIcon{
     color: #D93025;
     display: none;
 }
 
 .alert span{
     color: #a6a6a6;
+}
+
+#Checkbutton{
+    background-color: #34e5ff;
 }

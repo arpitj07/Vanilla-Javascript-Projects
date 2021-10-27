@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Header.css">
     <link rel="stylesheet" href="./Meditation App/meditationBG.css">
-    <link rel="stylesheet" href="LoginForm.css">
+    <link rel="stylesheet" href="./LoginApp/LoginForm.css">
     
 </head>
 
@@ -72,13 +72,13 @@
                     <label>Enter Email</label>
                 </div>
                 <div class="input-box password">
-                    <input type="password"  required>
-                    <i class="fa fa-eye-slash"></i>
+                    <input id="LoginPW" type="password"  required>
+                    <i class="fa fa-eye-slash show-one"></i>
                     <label>Enter Password</label>
                     
                 </div>
                 <div class="input-box button">
-                    <input id="Subbutton" type="button" value="submit">
+                    <input id="Subbutton" type="button" value="SUBMIT">
                 </div>
             </div>
         </div>
@@ -86,29 +86,29 @@
         <div class="division">
             <div class="Password">
                 <div class="input-box password">
-                    <input type="password" required>
+                    <input id="CreatePW" type="password" required>
                     <label>Create Password</label>
-                    <i class="fa fa-eye-slash"></i>
+                    <i class="fa fa-eye-slash show2"></i>
                 </div>
                 <div class="input-box password">
-                    <input type="password" required>
+                    <input id="ConPW" type="password" required disabled>
                     <label>Confirm Password</label>
-                    <i class="fa fa-eye-slash"></i> 
+                    <i class="fa fa-eye-slash show3"></i> 
                 </div>
                 <div class="alert">
-                    <i class="fa fa-exclamation-circle alerticon"></i>
+                    <i class="fa fa-exclamation-circle alertIcon"></i>
                     <span class="text">Enter atleast 8 characters</span>
                 </div>
                 
                 <div class="input-box button">
-                    <input id="Checkbutton" type="button" value="Check">
+                    <input id="Checkbutton" type="button" value="CHECK">
                 </div>
             </div>
         </div>
     </section>
 
-
     <script src="./Meditation App/meditation.js"></script>
+    <script src="./LoginApp/LoginForm.js"></script>
 
 </body>
 </html>
