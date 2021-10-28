@@ -66,5 +66,4 @@ function restartGame(){
     start();
 }
 start();
-
 restart.addEventListener("click", restartGame);
